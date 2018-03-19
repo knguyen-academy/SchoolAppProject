@@ -51,6 +51,12 @@
     <Compile Include="AboutMe_UserControl.Designer.cs">
       <DependentUpon>AboutMe_UserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlbumUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AlbumUserControl.Designer.cs">
+      <DependentUpon>AlbumUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Education_UserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <EmbeddedResource Include="AboutMe_UserControl.resx">
       <DependentUpon>AboutMe_UserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AlbumUserControl.resx">
+      <DependentUpon>AlbumUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Education_UserControl.resx">
       <DependentUpon>Education_UserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +103,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="TravelPhotoUserControl.resx">
       <DependentUpon>TravelPhotoUserControl.cs</DependentUpon>
@@ -113,6 +123,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Canada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Us.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vietnam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Japan.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

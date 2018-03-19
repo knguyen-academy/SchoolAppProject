@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
+            this.Contact_button = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.Travel_button = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -54,9 +54,10 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.Exit_button = new System.Windows.Forms.Button();
+            this.albumUserControl1 = new SchoolAppProject.AlbumUserControl();
+            this.Travel_Usercontrol = new SchoolAppProject.TravelUserControl();
             this.education_UserControl1 = new SchoolAppProject.Education_UserControl();
             this.aboutMe_UserControl1 = new SchoolAppProject.AboutMe_UserControl();
-            this.Travel_Usercontrol = new SchoolAppProject.TravelUserControl();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,7 +67,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.panel1.Controls.Add(this.SidePanel);
-            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.Contact_button);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.Travel_button);
             this.panel1.Controls.Add(this.button2);
@@ -89,21 +90,22 @@
             this.SidePanel.Size = new System.Drawing.Size(10, 66);
             this.SidePanel.TabIndex = 9;
             // 
-            // button9
+            // Contact_button
             // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(12, 595);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(145, 66);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "       Contact";
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button9.UseVisualStyleBackColor = true;
+            this.Contact_button.FlatAppearance.BorderSize = 0;
+            this.Contact_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Contact_button.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contact_button.ForeColor = System.Drawing.Color.White;
+            this.Contact_button.Image = ((System.Drawing.Image)(resources.GetObject("Contact_button.Image")));
+            this.Contact_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Contact_button.Location = new System.Drawing.Point(12, 595);
+            this.Contact_button.Name = "Contact_button";
+            this.Contact_button.Size = new System.Drawing.Size(145, 66);
+            this.Contact_button.TabIndex = 3;
+            this.Contact_button.Text = "       Contact";
+            this.Contact_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Contact_button.UseVisualStyleBackColor = true;
+            this.Contact_button.Click += new System.EventHandler(this.Contact_button_Click);
             // 
             // button8
             // 
@@ -404,6 +406,20 @@
             this.Exit_button.UseVisualStyleBackColor = true;
             this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
+            // albumUserControl1
+            // 
+            this.albumUserControl1.Location = new System.Drawing.Point(174, 185);
+            this.albumUserControl1.Name = "albumUserControl1";
+            this.albumUserControl1.Size = new System.Drawing.Size(1114, 524);
+            this.albumUserControl1.TabIndex = 10;
+            // 
+            // Travel_Usercontrol
+            // 
+            this.Travel_Usercontrol.Location = new System.Drawing.Point(174, 185);
+            this.Travel_Usercontrol.Name = "Travel_Usercontrol";
+            this.Travel_Usercontrol.Size = new System.Drawing.Size(1114, 524);
+            this.Travel_Usercontrol.TabIndex = 9;
+            // 
             // education_UserControl1
             // 
             this.education_UserControl1.Location = new System.Drawing.Point(174, 185);
@@ -418,18 +434,12 @@
             this.aboutMe_UserControl1.Size = new System.Drawing.Size(1114, 524);
             this.aboutMe_UserControl1.TabIndex = 7;
             // 
-            // Travel_Usercontrol
-            // 
-            this.Travel_Usercontrol.Location = new System.Drawing.Point(174, 185);
-            this.Travel_Usercontrol.Name = "Travel_Usercontrol";
-            this.Travel_Usercontrol.Size = new System.Drawing.Size(1114, 524);
-            this.Travel_Usercontrol.TabIndex = 9;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1288, 709);
+            this.Controls.Add(this.albumUserControl1);
             this.Controls.Add(this.Travel_Usercontrol);
             this.Controls.Add(this.education_UserControl1);
             this.Controls.Add(this.aboutMe_UserControl1);
@@ -474,7 +484,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button Travel_button;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button Contact_button;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button11;
@@ -488,6 +498,7 @@
         private AboutMe_UserControl aboutMe_UserControl1;
         private Education_UserControl education_UserControl1;
         private TravelUserControl Travel_Usercontrol;
+        private AlbumUserControl albumUserControl1;
     }
 }
 

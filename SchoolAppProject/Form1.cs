@@ -12,10 +12,11 @@ namespace SchoolAppProject
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
-
+            
             //event handler for quote 
             Quote_label.MouseEnter += OnMouseEnter; 
             Quote_label.MouseLeave += OnMouseLeave;
@@ -38,6 +39,7 @@ namespace SchoolAppProject
             SidePanel.Height = Aboutme_button.Height;
             SidePanel.Top = Aboutme_button.Top;
             aboutMe_UserControl1.BringToFront();
+            
         }
 
         private void Education_button_Click(object sender, EventArgs e)
@@ -58,6 +60,20 @@ namespace SchoolAppProject
             SidePanel.Height = Travel_button.Height;
             SidePanel.Top = Travel_button.Top;
             Travel_Usercontrol.BringToFront();
+        }
+
+        public void BringAlbumUCtofront()
+        {
+            albumUserControl1.BringToFront();
+            //MessageBox.Show("haha");
+        }
+
+        private void Contact_button_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = Travel_button.Height;
+            SidePanel.Top = Travel_button.Top;
+            albumUserControl1.BringToFront();
+            
         }
     }
 }

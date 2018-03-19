@@ -16,7 +16,7 @@ namespace SchoolAppProject
         {
             InitializeComponent();
         }
-
+        
         public string DestinationLabel
         {
             get { return Destination_label.Text; }
@@ -34,11 +34,18 @@ namespace SchoolAppProject
             set { Number_label.Text = value; }
         }
 
-        //public void ChangePhoto
-        //{
-        //    pictureBox 
-        //}
+        public Image PostImage
+        {
+            get { return pictureBox.Image; }
+            set { pictureBox.Image = value; }
+        }
 
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.BringAlbumUCtofront();
+            MessageBox.Show(DestinationLabel);
 
+        }
     }
 }

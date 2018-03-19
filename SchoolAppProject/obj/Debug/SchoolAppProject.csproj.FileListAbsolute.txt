@@ -22,4 +22,4 @@ E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.exe
 E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.pdb
 E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.TravelUserControl.resources
 E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.TravelPhotoUserControl.resources
-E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.csprojResolveAssemblyReference.cache
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.AlbumUserControl.resources
