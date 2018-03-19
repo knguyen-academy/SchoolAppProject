@@ -9,3 +9,17 @@ C:\Users\khoinguyen\source\repos\SchoolAppProject\SchoolAppProject\obj\Debug\Sch
 C:\Users\khoinguyen\source\repos\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.exe
 C:\Users\khoinguyen\source\repos\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.pdb
 C:\Users\khoinguyen\source\repos\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.Education_UserControl.resources
+E:\GIT\SchoolAppProject\SchoolAppProject\bin\Debug\SchoolAppProject.exe.config
+E:\GIT\SchoolAppProject\SchoolAppProject\bin\Debug\SchoolAppProject.exe
+E:\GIT\SchoolAppProject\SchoolAppProject\bin\Debug\SchoolAppProject.pdb
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.AboutMe_UserControl.resources
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.Education_UserControl.resources
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.Form1.resources
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.Properties.Resources.resources
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.csproj.GenerateResource.Cache
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.csproj.CoreCompileInputs.cache
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.exe
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.pdb
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.TravelUserControl.resources
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.TravelPhotoUserControl.resources
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.csprojResolveAssemblyReference.cache

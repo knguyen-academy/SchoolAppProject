@@ -65,6 +65,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TravelPhotoUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TravelPhotoUserControl.Designer.cs">
+      <DependentUpon>TravelPhotoUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TravelUserControl.Designer.cs">
+      <DependentUpon>TravelUserControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutMe_UserControl.resx">
       <DependentUpon>AboutMe_UserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +95,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TravelPhotoUserControl.resx">
+      <DependentUpon>TravelPhotoUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelUserControl.resx">
+      <DependentUpon>TravelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

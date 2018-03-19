@@ -33,7 +33,7 @@
             this.SidePanel = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.Travel_button = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -50,12 +50,13 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Quote_label = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.aboutMe_UserControl1 = new SchoolAppProject.AboutMe_UserControl();
+            this.Exit_button = new System.Windows.Forms.Button();
             this.education_UserControl1 = new SchoolAppProject.Education_UserControl();
+            this.aboutMe_UserControl1 = new SchoolAppProject.AboutMe_UserControl();
+            this.Travel_Usercontrol = new SchoolAppProject.TravelUserControl();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,7 +68,7 @@
             this.panel1.Controls.Add(this.SidePanel);
             this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.Travel_button);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
@@ -120,21 +121,22 @@
             this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // Travel_button
             // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(12, 529);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(145, 66);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "       Travel";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = true;
+            this.Travel_button.FlatAppearance.BorderSize = 0;
+            this.Travel_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Travel_button.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Travel_button.ForeColor = System.Drawing.Color.White;
+            this.Travel_button.Image = ((System.Drawing.Image)(resources.GetObject("Travel_button.Image")));
+            this.Travel_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Travel_button.Location = new System.Drawing.Point(12, 529);
+            this.Travel_button.Name = "Travel_button";
+            this.Travel_button.Size = new System.Drawing.Size(145, 66);
+            this.Travel_button.TabIndex = 3;
+            this.Travel_button.Text = "       Travel";
+            this.Travel_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Travel_button.UseVisualStyleBackColor = true;
+            this.Travel_button.Click += new System.EventHandler(this.Travel_button_Click_1);
             // 
             // button2
             // 
@@ -346,15 +348,15 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
             // 
-            // label4
+            // Quote_label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(398, 110);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(649, 30);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "\"Education is not preparation for life; education is life itself.\"\r\n";
+            this.Quote_label.AutoSize = true;
+            this.Quote_label.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quote_label.Location = new System.Drawing.Point(398, 110);
+            this.Quote_label.Name = "Quote_label";
+            this.Quote_label.Size = new System.Drawing.Size(649, 30);
+            this.Quote_label.TabIndex = 6;
+            this.Quote_label.Text = "\"Education is not preparation for life; education is life itself.\"\r\n";
             // 
             // button13
             // 
@@ -386,27 +388,21 @@
             this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button15.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // Exit_button
             // 
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(1237, 23);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(38, 51);
-            this.button16.TabIndex = 3;
-            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // aboutMe_UserControl1
-            // 
-            this.aboutMe_UserControl1.Location = new System.Drawing.Point(174, 185);
-            this.aboutMe_UserControl1.Name = "aboutMe_UserControl1";
-            this.aboutMe_UserControl1.Size = new System.Drawing.Size(1114, 524);
-            this.aboutMe_UserControl1.TabIndex = 7;
+            this.Exit_button.FlatAppearance.BorderSize = 0;
+            this.Exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Exit_button.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_button.ForeColor = System.Drawing.Color.White;
+            this.Exit_button.Image = ((System.Drawing.Image)(resources.GetObject("Exit_button.Image")));
+            this.Exit_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Exit_button.Location = new System.Drawing.Point(1237, 23);
+            this.Exit_button.Name = "Exit_button";
+            this.Exit_button.Size = new System.Drawing.Size(38, 51);
+            this.Exit_button.TabIndex = 3;
+            this.Exit_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Exit_button.UseVisualStyleBackColor = true;
+            this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
             // education_UserControl1
             // 
@@ -415,19 +411,34 @@
             this.education_UserControl1.Size = new System.Drawing.Size(1114, 524);
             this.education_UserControl1.TabIndex = 8;
             // 
+            // aboutMe_UserControl1
+            // 
+            this.aboutMe_UserControl1.Location = new System.Drawing.Point(174, 185);
+            this.aboutMe_UserControl1.Name = "aboutMe_UserControl1";
+            this.aboutMe_UserControl1.Size = new System.Drawing.Size(1114, 524);
+            this.aboutMe_UserControl1.TabIndex = 7;
+            // 
+            // Travel_Usercontrol
+            // 
+            this.Travel_Usercontrol.Location = new System.Drawing.Point(174, 185);
+            this.Travel_Usercontrol.Name = "Travel_Usercontrol";
+            this.Travel_Usercontrol.Size = new System.Drawing.Size(1114, 524);
+            this.Travel_Usercontrol.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1288, 709);
+            this.Controls.Add(this.Travel_Usercontrol);
             this.Controls.Add(this.education_UserControl1);
             this.Controls.Add(this.aboutMe_UserControl1);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Quote_label);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.Exit_button);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button10);
@@ -461,7 +472,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button Education_button;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button Travel_button;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
@@ -469,13 +480,14 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Quote_label;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.Panel SidePanel;
         private AboutMe_UserControl aboutMe_UserControl1;
         private Education_UserControl education_UserControl1;
+        private TravelUserControl Travel_Usercontrol;
     }
 }
 
