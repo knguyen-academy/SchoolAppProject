@@ -12,6 +12,8 @@ namespace SchoolAppProject
 {
     public partial class TravelPhotoUserControl : UserControl
     {
+
+        
         public TravelPhotoUserControl()
         {
             InitializeComponent();
@@ -42,9 +44,12 @@ namespace SchoolAppProject
 
         private void pictureBox_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.BringAlbumUCtofront();
-            MessageBox.Show(DestinationLabel);
+            AlbumUserControl.Instance.BringToFront();
+            //MessageBox.Show(DestinationLabel);
+            //AlbumUserControl a1 = new AlbumUserControl();
+            //a1.BringToFront();
+            //TravelUserControl i1 = new TravelUserControl();
+            
 
         }
     }

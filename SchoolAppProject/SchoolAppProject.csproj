@@ -57,6 +57,12 @@
     <Compile Include="AlbumUserControl.Designer.cs">
       <DependentUpon>AlbumUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContactUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContactUC.Designer.cs">
+      <DependentUpon>ContactUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Education_UserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AlbumUserControl.resx">
       <DependentUpon>AlbumUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactUC.resx">
+      <DependentUpon>ContactUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Education_UserControl.resx">
       <DependentUpon>Education_UserControl.cs</DependentUpon>

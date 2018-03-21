@@ -10,19 +10,20 @@ using System.Windows.Forms;
 
 namespace SchoolAppProject
 {
-    public partial class Education_UserControl : UserControl
+    public partial class ContactUC : UserControl
     {
-        private static Education_UserControl _instance;
-        public static Education_UserControl Instance
+        private static ContactUC _instance;
+        public static ContactUC Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new Education_UserControl();
+                    _instance = new ContactUC();
                 return _instance;
             }
+           
         }
-        public Education_UserControl()
+        public ContactUC()
         {
             InitializeComponent();
         }

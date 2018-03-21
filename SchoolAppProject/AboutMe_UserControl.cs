@@ -12,6 +12,18 @@ namespace SchoolAppProject
 {
     public partial class AboutMe_UserControl : UserControl
     {
+        private static AboutMe_UserControl _instance;
+
+        public static AboutMe_UserControl Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new AboutMe_UserControl();
+                return _instance;
+            }
+        }
+
         public AboutMe_UserControl()
         {
             InitializeComponent();

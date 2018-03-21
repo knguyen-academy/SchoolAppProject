@@ -12,6 +12,20 @@ namespace SchoolAppProject
 {
     public partial class AlbumUserControl : UserControl
     {
+
+
+        private static AlbumUserControl _instance;
+
+        public static AlbumUserControl Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new AlbumUserControl();
+                return _instance;
+            }
+        }
+
         public AlbumUserControl()
         {
             InitializeComponent();

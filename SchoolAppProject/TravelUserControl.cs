@@ -12,13 +12,26 @@ namespace SchoolAppProject
 {
     public partial class TravelUserControl : UserControl
     {
+        //Private instance/object so that we don't have to declare everytime
+        private static TravelUserControl _instance;
+
+        //public function to get an object
+        public static TravelUserControl Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new TravelUserControl();
+                return _instance;
+            }
+        }
+
         public TravelUserControl()
         {
             
             InitializeComponent();
             control();
         }
-
 
         public void control()
         {
@@ -56,7 +69,19 @@ namespace SchoolAppProject
             uc5.NumberLabel = "0";
             uc5.PostImage = Properties.Resources.Us;
             Photo_Panel.Controls.Add(uc5);
+
+            //Photo_Panel.Controls.
+            //AlbumUserControl ab1 = new AlbumUserControl();
+            //Photo_Panel.Controls.Contains(ab1);
+            //ab1.Dock = DockStyle.Fill;
+
+            //Photo_Panel.Controls.Add(AlbumUserControl.Instance);
+            //AlbumUserControl.Instance.Dock = DockStyle.Fill;
+            //ContactUC.Instance.BringToFront();
+
+
         }
-        
+
+ 
     }
 }
