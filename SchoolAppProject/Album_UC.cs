@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace SchoolAppProject
 {
-    public partial class AlbumUserControl : UserControl
+    public partial class Album_UC : UserControl
     {
 
 
-        private static AlbumUserControl _instance;
+        private static Album_UC _instance;
 
-        public static AlbumUserControl Instance
+        public static Album_UC Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new AlbumUserControl();
+                    _instance = new Album_UC();
                 return _instance;
             }
         }
@@ -32,7 +32,7 @@ namespace SchoolAppProject
             set { Album_label.Text = value; }
         }
 
-        public AlbumUserControl()
+        public Album_UC()
         {
             InitializeComponent();
         }

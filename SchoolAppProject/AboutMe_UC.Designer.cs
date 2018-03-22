@@ -1,6 +1,6 @@
 ﻿namespace SchoolAppProject
 {
-    partial class AboutMe_UserControl
+    partial class AboutMe_UC
     {
         /// <summary> 
         /// Required designer variable.

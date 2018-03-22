@@ -1,6 +1,6 @@
 ﻿namespace SchoolAppProject
 {
-    partial class ContactUC
+    partial class Education_UC
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,13 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(70, 57);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(883, 467);
+            this.panel2.TabIndex = 9;
             // 
             // panel1
             // 
@@ -52,9 +61,9 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(-4, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 36);
+            this.label1.Size = new System.Drawing.Size(156, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Contact";
+            this.label1.Text = "Education";
             // 
             // flowLayoutPanel2
             // 
@@ -74,24 +83,15 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(161, 524);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1114, 524);
-            this.panel2.TabIndex = 9;
-            // 
-            // ContactUC
+            // Education_UserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.panel2);
-            this.Name = "ContactUC";
+            this.Name = "Education_UserControl";
             this.Size = new System.Drawing.Size(1114, 524);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -101,10 +101,10 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel2;
     }
 }

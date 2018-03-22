@@ -7,7 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/// <summary>
+/// ///////////////////////////////////////////////////////////////////////////////////////////////////
+/// </summary>
+//Design:
+//Form1:
+//	-Aboutme
+//	-Education
+//	-...
+//	-Travel
+//		-Travel_UC
+//			-Destination_UC
+//				-Album_UC
 
+
+//Code:
+//Form1:
+//	-Add all the UserControl-forms of each button
+//	-BringtoFront Aboutme form
+
+//TravelUC:
+//	-AddUserControl() :
+//		-Init all Destination_UC, and add to its Panel
+//Destination_UC:
+//	- Public all its properties(labels..) so that Travel_UC can modify 
+//	- Button click:
+//		- Init all Album_UC so that if click on Photo, it will open Album_UC accordingly
+//        ** in order to bringtoFront, the UC has to added to the pannel of the previous UC ***
+///
 namespace SchoolAppProject
 {
     public partial class Form1 : Form
@@ -41,40 +68,40 @@ namespace SchoolAppProject
         void AddUCForms()
         {
             //About me UC
-            if (!Form1_Panel.Controls.Contains(AboutMe_UserControl.Instance))
+            if (!Form1_Panel.Controls.Contains(AboutMe_UC.Instance))
             {
-                Form1_Panel.Controls.Add(AboutMe_UserControl.Instance);     // Instance() function to get private _instance/object of Aboutme_UserControl class
-                AboutMe_UserControl.Instance.Dock = DockStyle.Fill;
-                AboutMe_UserControl.Instance.BringToFront();
+                Form1_Panel.Controls.Add(AboutMe_UC.Instance);     // Instance() function to get private _instance/object of Aboutme_UserControl class
+                AboutMe_UC.Instance.Dock = DockStyle.Fill;
+                AboutMe_UC.Instance.BringToFront();
             }
 
             //Education UC
-            if (!Form1_Panel.Controls.Contains(Education_UserControl.Instance))
+            if (!Form1_Panel.Controls.Contains(Education_UC.Instance))
             {
-                Form1_Panel.Controls.Add(Education_UserControl.Instance);
-                Education_UserControl.Instance.Dock = DockStyle.Fill;
+                Form1_Panel.Controls.Add(Education_UC.Instance);
+                Education_UC.Instance.Dock = DockStyle.Fill;
                 
             }
 
             //Album me UC
-            if (!Form1_Panel.Controls.Contains(AlbumUserControl.Instance))
+            if (!Form1_Panel.Controls.Contains(Album_UC.Instance))
             {
-                Form1_Panel.Controls.Add(AlbumUserControl.Instance);
-                AlbumUserControl.Instance.Dock = DockStyle.Fill;
+                Form1_Panel.Controls.Add(Album_UC.Instance);
+                Album_UC.Instance.Dock = DockStyle.Fill;
                
             }
 
-            if (!Form1_Panel.Controls.Contains(TravelUserControl.Instance))
+            if (!Form1_Panel.Controls.Contains(Travel_UC.Instance))
             {
-                Form1_Panel.Controls.Add(TravelUserControl.Instance);
-                TravelUserControl.Instance.Dock = DockStyle.Fill;
+                Form1_Panel.Controls.Add(Travel_UC.Instance);
+                Travel_UC.Instance.Dock = DockStyle.Fill;
                 
             }
 
-            if (!Form1_Panel.Controls.Contains(ContactUC.Instance))
+            if (!Form1_Panel.Controls.Contains(Contact_UC.Instance))
             {
-                Form1_Panel.Controls.Add(ContactUC.Instance);
-                ContactUC.Instance.Dock = DockStyle.Fill;
+                Form1_Panel.Controls.Add(Contact_UC.Instance);
+                Contact_UC.Instance.Dock = DockStyle.Fill;
                 //ContactUC.Instance.BringToFront();
             }
         }
@@ -82,7 +109,7 @@ namespace SchoolAppProject
         {
             SidePanel.Height = Aboutme_button.Height;
             SidePanel.Top = Aboutme_button.Top;
-            AboutMe_UserControl.Instance.BringToFront();
+            AboutMe_UC.Instance.BringToFront();
 
         }
 
@@ -90,7 +117,7 @@ namespace SchoolAppProject
         {
             SidePanel.Height = Education_button.Height;
             SidePanel.Top = Education_button.Top;
-            Education_UserControl.Instance.BringToFront();
+            Education_UC.Instance.BringToFront();
             //education_UserControl1.BringToFront();
         }
 
@@ -104,7 +131,7 @@ namespace SchoolAppProject
         {
             SidePanel.Height = Travel_button.Height;
             SidePanel.Top = Travel_button.Top;
-            TravelUserControl.Instance.BringToFront();
+            Travel_UC.Instance.BringToFront();
 
         }
 
@@ -113,7 +140,7 @@ namespace SchoolAppProject
         {
             SidePanel.Height = Contact_button.Height;
             SidePanel.Top = Contact_button.Top;
-            ContactUC.Instance.BringToFront();
+            Contact_UC.Instance.BringToFront();
         }
     }
 }

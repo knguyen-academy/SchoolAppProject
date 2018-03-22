@@ -1,6 +1,6 @@
 ﻿namespace SchoolAppProject
 {
-    partial class TravelPhotoUserControl
+    partial class Destination_UC
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TravelPhotoUserControl));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Destination_UC));
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.Destination_label = new System.Windows.Forms.Label();
             this.Date_label = new System.Windows.Forms.Label();

@@ -10,20 +10,20 @@ using System.Windows.Forms;
 
 namespace SchoolAppProject
 {
-    public partial class TravelPhotoUserControl : UserControl
+    public partial class Destination_UC : UserControl
     {
        
-        private static TravelPhotoUserControl _instance;
-        public static TravelPhotoUserControl Instance
+        private static Destination_UC _instance;
+        public static Destination_UC Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new TravelPhotoUserControl();
+                    _instance = new Destination_UC();
                 return _instance;
             }
         }
-        public TravelPhotoUserControl()
+        public Destination_UC()
         {
             InitializeComponent();
         }
@@ -57,41 +57,41 @@ namespace SchoolAppProject
           
             if (DestinationLabel == "JAPAN")
             {
-                AlbumUserControl uc1 = new AlbumUserControl();
+                Album_UC uc1 = new Album_UC();
                 uc1.AlbumLabel = "JAPAN ALBUM";
-                TravelUserControl.Instance.Controls.Add(uc1);
+                Travel_UC.Instance.Controls.Add(uc1);
                 uc1.BringToFront();
             }
 
             if (DestinationLabel == "CANADA")
             {
-                AlbumUserControl uc2 = new AlbumUserControl();
+                Album_UC uc2 = new Album_UC();
                 uc2.AlbumLabel = "CANADA ALBUM";
-                TravelUserControl.Instance.Controls.Add(uc2);
+                Travel_UC.Instance.Controls.Add(uc2);
                 uc2.BringToFront();
             }
 
             if (DestinationLabel == "VIETNAM")
             {
-                AlbumUserControl uc3 = new AlbumUserControl();
+                Album_UC uc3 = new Album_UC();
                 uc3.AlbumLabel = "VIETNAM ALBUM";
-                TravelUserControl.Instance.Controls.Add(uc3);
+                Travel_UC.Instance.Controls.Add(uc3);
                 uc3.BringToFront();
             }
 
             if (DestinationLabel == "NEWYORK")
             {
-                AlbumUserControl uc4 = new AlbumUserControl();
+                Album_UC uc4 = new Album_UC();
                 uc4.AlbumLabel = "NEWYORK ALBUM";
-                TravelUserControl.Instance.Controls.Add(uc4);
+                Travel_UC.Instance.Controls.Add(uc4);
                 uc4.BringToFront();
             }
 
             if (DestinationLabel == "LA")
             {
-                AlbumUserControl uc5 = new AlbumUserControl();
+                Album_UC uc5 = new Album_UC();
                 uc5.AlbumLabel = "LA ALBUM";
-                TravelUserControl.Instance.Controls.Add(uc5);
+                Travel_UC.Instance.Controls.Add(uc5);
                 uc5.BringToFront();
             }
 
