@@ -83,6 +83,16 @@ namespace SchoolAppProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LA {
+            get {
+                object obj = ResourceManager.GetObject("LA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Us {
             get {
                 object obj = ResourceManager.GetObject("Us", resourceCulture);

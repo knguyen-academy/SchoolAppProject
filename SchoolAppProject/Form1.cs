@@ -53,7 +53,7 @@ namespace SchoolAppProject
             {
                 Form1_Panel.Controls.Add(Education_UserControl.Instance);
                 Education_UserControl.Instance.Dock = DockStyle.Fill;
-                // AlbumUserControl.Instance.BringToFront();
+                
             }
 
             //Album me UC
@@ -61,14 +61,14 @@ namespace SchoolAppProject
             {
                 Form1_Panel.Controls.Add(AlbumUserControl.Instance);
                 AlbumUserControl.Instance.Dock = DockStyle.Fill;
-               // AlbumUserControl.Instance.BringToFront();
+               
             }
 
             if (!Form1_Panel.Controls.Contains(TravelUserControl.Instance))
             {
                 Form1_Panel.Controls.Add(TravelUserControl.Instance);
                 TravelUserControl.Instance.Dock = DockStyle.Fill;
-                //TravelUserControl.Instance.BringToFront();
+                
             }
 
             if (!Form1_Panel.Controls.Contains(ContactUC.Instance))
@@ -108,11 +108,6 @@ namespace SchoolAppProject
 
         }
 
-        public void BringAlbumUCtofront()
-        {
-            //albumUserControl1.BringToFront();
-            //MessageBox.Show("haha");
-        }
 
         private void Contact_button_Click(object sender, EventArgs e)
         {

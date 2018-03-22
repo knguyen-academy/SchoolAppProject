@@ -378,9 +378,9 @@
             // SidePanel
             // 
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.SidePanel.Location = new System.Drawing.Point(3, 67);
+            this.SidePanel.Location = new System.Drawing.Point(0, 67);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(10, 66);
+            this.SidePanel.Size = new System.Drawing.Size(13, 66);
             this.SidePanel.TabIndex = 9;
             // 
             // panel1

@@ -26,11 +26,22 @@ namespace SchoolAppProject
             }
         }
 
+        public string AlbumLabel
+        {
+            get { return Album_label.Text; }
+            set { Album_label.Text = value; }
+        }
+
         public AlbumUserControl()
         {
             InitializeComponent();
         }
 
 
+        
+        private void Back_button_Click(object sender, EventArgs e)
+        {
+            SendToBack();
+        }
     }
 }

@@ -30,10 +30,10 @@ namespace SchoolAppProject
         {
             
             InitializeComponent();
-            control();
+            AddUsercontrol();
         }
 
-        public void control()
+        public void AddUsercontrol()
         {
             TravelPhotoUserControl uc1 = new TravelPhotoUserControl();
             uc1.DestinationLabel = "JAPAN";
@@ -43,11 +43,12 @@ namespace SchoolAppProject
             Photo_Panel.Controls.Add(uc1);
 
             TravelPhotoUserControl uc2 = new TravelPhotoUserControl();
-            uc2.DestinationLabel = "CANANDA";
+            uc2.DestinationLabel = "CANADA";
             uc2.DateLabel = "2018-02";
             uc2.NumberLabel = "0";
             uc2.PostImage = Properties.Resources.Canada;
             Photo_Panel.Controls.Add(uc2);
+            
 
             TravelPhotoUserControl uc3 = new TravelPhotoUserControl();
             uc3.DestinationLabel = "VIETNAM";
@@ -57,28 +58,21 @@ namespace SchoolAppProject
             Photo_Panel.Controls.Add(uc3);
 
             TravelPhotoUserControl uc4 = new TravelPhotoUserControl();
-            uc4.DestinationLabel = "US";
+            uc4.DestinationLabel = "NEWYORK";
             uc4.DateLabel = "2018-02";
             uc4.NumberLabel = "0";
             uc4.PostImage = Properties.Resources.Us;
             Photo_Panel.Controls.Add(uc4);
 
             TravelPhotoUserControl uc5 = new TravelPhotoUserControl();
-            uc5.DestinationLabel = "US";
+            uc5.DestinationLabel = "LA";
             uc5.DateLabel = "2018-02";
             uc5.NumberLabel = "0";
-            uc5.PostImage = Properties.Resources.Us;
+            uc5.PostImage = Properties.Resources.LA;
             Photo_Panel.Controls.Add(uc5);
 
-            //Photo_Panel.Controls.
-            //AlbumUserControl ab1 = new AlbumUserControl();
-            //Photo_Panel.Controls.Contains(ab1);
-            //ab1.Dock = DockStyle.Fill;
 
-            //Photo_Panel.Controls.Add(AlbumUserControl.Instance);
-            //AlbumUserControl.Instance.Dock = DockStyle.Fill;
-            //ContactUC.Instance.BringToFront();
-
+            
 
         }
 
