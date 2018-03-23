@@ -41,7 +41,7 @@ namespace SchoolAppProject
             uc1.NumberLabel = "0";
             uc1.PostImage = Properties.Resources.Japan;
             Photo_Panel.Controls.Add(uc1);
-
+            
             Destination_UC uc2 = new Destination_UC();
             uc2.DestinationLabel = "CANADA";
             uc2.DateLabel = "2018-02";
