@@ -357,6 +357,7 @@
             this.button8.Text = "       GitHub";
             this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button8.UseVisualStyleBackColor = true;
+
             // 
             // Contact_button
             // 

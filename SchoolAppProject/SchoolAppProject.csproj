@@ -148,5 +148,28 @@
   <ItemGroup>
     <None Include="Resources\LA.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Canada\1.jpg" />
+    <Content Include="Images\Canada\2.jpg" />
+    <Content Include="Images\Canada\3.jpg" />
+    <Content Include="Images\Canada\4.jpg" />
+    <Content Include="Images\Japan\1.JPG" />
+    <Content Include="Images\Japan\2.JPG" />
+    <Content Include="Images\Japan\3.JPG" />
+    <Content Include="Images\Japan\4.JPG" />
+    <Content Include="Images\LA\1.jpg" />
+    <Content Include="Images\LA\2.jpg" />
+    <Content Include="Images\LA\3.jpg" />
+    <Content Include="Images\LA\4.jpg" />
+    <Content Include="Images\Newyork\1.jpg" />
+    <Content Include="Images\Newyork\2.jpg" />
+    <Content Include="Images\Newyork\3.jpg" />
+    <Content Include="Images\Newyork\4.jpg" />
+    <Content Include="Images\Vietnam\1.jpg" />
+    <Content Include="Images\Vietnam\2.jpg" />
+    <Content Include="Images\Vietnam\3.jpg" />
+    <Content Include="Images\Vietnam\4.jpg" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
