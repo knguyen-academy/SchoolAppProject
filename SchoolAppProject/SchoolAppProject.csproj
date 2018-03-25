@@ -148,6 +148,7 @@
   <ItemGroup>
     <None Include="Resources\LA.jpg" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <Content Include="Images\Canada\1.jpg" />
     <Content Include="Images\Canada\2.jpg" />
@@ -178,5 +179,7 @@
     <Content Include="Images\Vietnam\4.jpg" />
   </ItemGroup>
   <ItemGroup />
+=======
+>>>>>>> parent of 7c47611... Travel button
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -142,6 +142,5 @@ namespace SchoolAppProject
             SidePanel.Top = Contact_button.Top;
             Contact_UC.Instance.BringToFront();
         }
-
-      }
+    }
 }

@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Album_UC));
             this.Mid_panel = new System.Windows.Forms.Panel();
-            this.Photoleft_panel = new System.Windows.Forms.FlowLayoutPanel();
-            this.showall_button = new System.Windows.Forms.Button();
             this.next_button = new System.Windows.Forms.Button();
             this.previous_button = new System.Windows.Forms.Button();
             this.Bottom_panel = new System.Windows.Forms.Panel();
@@ -43,9 +41,8 @@
             this.Top_panel = new System.Windows.Forms.Panel();
             this.Left_Panel = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.Photoleft_panel = new System.Windows.Forms.FlowLayoutPanel();
             this.Mid_panel.SuspendLayout();
-            this.Bottom_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Slider_pictureBox)).BeginInit();
             this.Top_panel.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +50,8 @@
             // Mid_panel
             // 
             this.Mid_panel.Controls.Add(this.Photoleft_panel);
+            this.Mid_panel.Controls.Add(this.next_button);
+            this.Mid_panel.Controls.Add(this.previous_button);
             this.Mid_panel.Controls.Add(this.Bottom_panel);
             this.Mid_panel.Controls.Add(this.Slider_pictureBox);
             this.Mid_panel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -62,30 +61,6 @@
             this.Mid_panel.Size = new System.Drawing.Size(1044, 467);
             this.Mid_panel.TabIndex = 13;
             // 
-            // Photoleft_panel
-            // 
-            this.Photoleft_panel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Photoleft_panel.Location = new System.Drawing.Point(7, 7);
-            this.Photoleft_panel.Name = "Photoleft_panel";
-            this.Photoleft_panel.Size = new System.Drawing.Size(120, 408);
-            this.Photoleft_panel.TabIndex = 6;
-            // 
-            // showall_button
-            // 
-            this.showall_button.FlatAppearance.BorderSize = 0;
-            this.showall_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.showall_button.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showall_button.ForeColor = System.Drawing.Color.White;
-            this.showall_button.Image = ((System.Drawing.Image)(resources.GetObject("showall_button.Image")));
-            this.showall_button.Location = new System.Drawing.Point(39, 35);
-            this.showall_button.Name = "showall_button";
-            this.showall_button.Size = new System.Drawing.Size(48, 19);
-            this.showall_button.TabIndex = 4;
-            this.showall_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip1.SetToolTip(this.showall_button, "Show all photos");
-            this.showall_button.UseVisualStyleBackColor = true;
-            this.showall_button.Click += new System.EventHandler(this.showall_button_Click);
-            // 
             // next_button
             // 
             this.next_button.FlatAppearance.BorderSize = 0;
@@ -94,9 +69,9 @@
             this.next_button.ForeColor = System.Drawing.Color.White;
             this.next_button.Image = ((System.Drawing.Image)(resources.GetObject("next_button.Image")));
             this.next_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.next_button.Location = new System.Drawing.Point(538, 3);
+            this.next_button.Location = new System.Drawing.Point(963, 194);
             this.next_button.Name = "next_button";
-            this.next_button.Size = new System.Drawing.Size(38, 42);
+            this.next_button.Size = new System.Drawing.Size(38, 45);
             this.next_button.TabIndex = 5;
             this.next_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.next_button.UseVisualStyleBackColor = true;
@@ -110,9 +85,9 @@
             this.previous_button.ForeColor = System.Drawing.Color.White;
             this.previous_button.Image = ((System.Drawing.Image)(resources.GetObject("previous_button.Image")));
             this.previous_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.previous_button.Location = new System.Drawing.Point(494, 3);
+            this.previous_button.Location = new System.Drawing.Point(963, 143);
             this.previous_button.Name = "previous_button";
-            this.previous_button.Size = new System.Drawing.Size(38, 42);
+            this.previous_button.Size = new System.Drawing.Size(38, 45);
             this.previous_button.TabIndex = 5;
             this.previous_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.previous_button.UseVisualStyleBackColor = true;
@@ -120,12 +95,10 @@
             // 
             // Bottom_panel
             // 
-            this.Bottom_panel.Controls.Add(this.next_button);
-            this.Bottom_panel.Controls.Add(this.previous_button);
             this.Bottom_panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Bottom_panel.Location = new System.Drawing.Point(0, 412);
+            this.Bottom_panel.Location = new System.Drawing.Point(0, 393);
             this.Bottom_panel.Name = "Bottom_panel";
-            this.Bottom_panel.Size = new System.Drawing.Size(1044, 55);
+            this.Bottom_panel.Size = new System.Drawing.Size(1044, 74);
             this.Bottom_panel.TabIndex = 2;
             // 
             // Slider_pictureBox
@@ -133,7 +106,7 @@
             this.Slider_pictureBox.Image = global::SchoolAppProject.Properties.Resources.Japan;
             this.Slider_pictureBox.Location = new System.Drawing.Point(133, 6);
             this.Slider_pictureBox.Name = "Slider_pictureBox";
-            this.Slider_pictureBox.Size = new System.Drawing.Size(824, 409);
+            this.Slider_pictureBox.Size = new System.Drawing.Size(824, 381);
             this.Slider_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Slider_pictureBox.TabIndex = 1;
             this.Slider_pictureBox.TabStop = false;
@@ -152,7 +125,6 @@
             this.SlideShow_button.Size = new System.Drawing.Size(35, 45);
             this.SlideShow_button.TabIndex = 5;
             this.SlideShow_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip1.SetToolTip(this.SlideShow_button, "Play slideshow");
             this.SlideShow_button.UseVisualStyleBackColor = true;
             this.SlideShow_button.Click += new System.EventHandler(this.SlideShow_button_Click);
             // 
@@ -164,7 +136,7 @@
             this.Back_button.ForeColor = System.Drawing.Color.White;
             this.Back_button.Image = ((System.Drawing.Image)(resources.GetObject("Back_button.Image")));
             this.Back_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Back_button.Location = new System.Drawing.Point(919, 6);
+            this.Back_button.Location = new System.Drawing.Point(991, 5);
             this.Back_button.Name = "Back_button";
             this.Back_button.Size = new System.Drawing.Size(38, 45);
             this.Back_button.TabIndex = 4;
@@ -186,7 +158,6 @@
             // 
             // Top_panel
             // 
-            this.Top_panel.Controls.Add(this.showall_button);
             this.Top_panel.Controls.Add(this.SlideShow_button);
             this.Top_panel.Controls.Add(this.Back_button);
             this.Top_panel.Controls.Add(this.Album_label);
@@ -211,6 +182,14 @@
             this.timer1.Interval = 2000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // Photoleft_panel
+            // 
+            this.Photoleft_panel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.Photoleft_panel.Location = new System.Drawing.Point(7, 7);
+            this.Photoleft_panel.Name = "Photoleft_panel";
+            this.Photoleft_panel.Size = new System.Drawing.Size(120, 380);
+            this.Photoleft_panel.TabIndex = 6;
+            // 
             // Album_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,7 +200,6 @@
             this.Name = "Album_UC";
             this.Size = new System.Drawing.Size(1114, 524);
             this.Mid_panel.ResumeLayout(false);
-            this.Bottom_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Slider_pictureBox)).EndInit();
             this.Top_panel.ResumeLayout(false);
             this.Top_panel.PerformLayout();
@@ -243,7 +221,5 @@
         private System.Windows.Forms.Button previous_button;
         private System.Windows.Forms.Button SlideShow_button;
         private System.Windows.Forms.FlowLayoutPanel Photoleft_panel;
-        private System.Windows.Forms.Button showall_button;
-        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
