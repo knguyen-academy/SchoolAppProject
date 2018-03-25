@@ -18,10 +18,12 @@ E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.csproj.Gener
 E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.csproj.CoreCompileInputs.cache
 E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.exe
 E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.pdb
-E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.csprojResolveAssemblyReference.cache
 E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.AboutMe_UC.resources
 E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.Album_UC.resources
 E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.Contact_UC.resources
 E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.Education_UC.resources
 E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.Destination_UC.resources
 E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.Travel_UC.resources
+E:\GIT\SchoolAppProject\SchoolAppProject\obj\Debug\SchoolAppProject.csprojResolveAssemblyReference.cache
+E:\GIT\SchoolAppProject\SchoolAppProject\bin\Debug\Images\Newyork\5.JPG
+E:\GIT\SchoolAppProject\SchoolAppProject\bin\Debug\Images\Newyork\6.JPG

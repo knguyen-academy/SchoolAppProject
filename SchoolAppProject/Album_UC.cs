@@ -57,22 +57,49 @@ namespace SchoolAppProject
             if (Album_label.Text == "LA ALBUM")
                 albumPath = "../../Images/LA";
         }
-
+        private string temp;
         private void DisplayAllPhotos()
         {
             string[] files = Directory.GetFiles(albumPath);
+
+            //foreach (string filename in files)
+            //{
+
+            //    PictureBox p1 = new PictureBox();
+            //    p1.Size = new Size(120, 90);
+            //    p1.Image = Image.FromFile(filename);
+            //    p1.SizeMode = PictureBoxSizeMode.StretchImage;
+            //    Photoleft_panel.Controls.Add(p1);
+            //    p1.Click += P1_Click;
+            //}
+            //int i = 0;
+
             foreach (string filename in files)
             {
-                PictureBox p1 = new PictureBox();
-                p1.Image = Image.FromFile(filename);
-                p1.SizeMode = PictureBoxSizeMode.StretchImage;
-                Photoleft_panel.Controls.Add(p1);
+                for (int i = 0; i < 5; i++)
+                {
+                    temp = filename;
+
+                    PictureBox[] p = new PictureBox[5];
+                    p[i] = new PictureBox();
+                    p[i].Size = new Size(120, 90);
+                    p[i].Image = Image.FromFile(filename);
+
+                    p[i].SizeMode = PictureBoxSizeMode.StretchImage;
+                    Photoleft_panel.Controls.Add(p[i]);
+                    p[i].Click += P1_Click;
+
+                }
             }
+
         }
 
         private void P1_Click(object sender, EventArgs e)
-        { 
-}
+        {
+            MessageBox.Show(temp);
+            //SelectAlbum();
+        }
+    
         private void ListAlbumPhotos()
         {
             //string[] files = Directory.GetFiles(@"Images\Japan");
