@@ -40,6 +40,8 @@ namespace SchoolAppProject
 
         }
 
+
+        //Select Album path for list all photos
         private void SelectAlbumPath()
         {
             if (Album_label.Text == "JAPAN ALBUM")
@@ -58,28 +60,40 @@ namespace SchoolAppProject
                 albumPath = "../../Images/LA";
         }
 
+        //Retrive all photos within each folder based on Album path
         private void DisplayAllPhotos()
         {
             string[] files = Directory.GetFiles(albumPath);
             foreach (string filename in files)
             {
+                MessageBox.Show(filename);
                 PictureBox p1 = new PictureBox();
                 p1.Image = Image.FromFile(filename);
                 p1.SizeMode = PictureBoxSizeMode.StretchImage;
+                p1.Size = new Size(150, 90);
                 Photoleft_panel.Controls.Add(p1);
             }
         }
 
-        private void P1_Click(object sender, EventArgs e)
-        { 
-}
-        private void ListAlbumPhotos()
+        //List all photos
+        private void showall_button_Click(object sender, EventArgs e)
         {
-            //string[] files = Directory.GetFiles(@"Images\Japan");
-            SelectAlbumPath();
-            DisplayAllPhotos();
+            if (Photoleft_panel.Controls.Count == 0)
+            {
+                
+                SelectAlbumPath();  // Find the path of the album
+                DisplayAllPhotos(); //Show all photos
+            }
+            
+
+
         }
 
+        private void P1_Click(object sender, EventArgs e)
+        { 
+        }
+
+        //Select Album for slideshow
         private void SelectAlbum()
         {
             if (Album_label.Text == "JAPAN ALBUM")
@@ -98,7 +112,7 @@ namespace SchoolAppProject
                 Slider_pictureBox.ImageLocation = string.Format(@"LAPhotos\{0}.jpg", photo_index);
         }
 
-
+        //Slide Show used for Timer.Tick
         public void PicturesLoad()
         {
 
@@ -110,6 +124,7 @@ namespace SchoolAppProject
 
         }
 
+        //Start timer
         private void SlideShow_button_Click(object sender, EventArgs e)
         {
             timer1.Interval = 500;             // Timer will tick evert 0.5 seconds
@@ -151,12 +166,6 @@ namespace SchoolAppProject
             timer1.Stop();
         }
 
-        private void showall_button_Click(object sender, EventArgs e)
-        {
-            if (Photoleft_panel.Controls.Count == 0)
-                ListAlbumPhotos();
 
-                
-        }
     }
 }
